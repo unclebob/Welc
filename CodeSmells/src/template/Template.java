@@ -3,7 +3,7 @@ package template;
 public class Template {
 	public static void main(String[] args) {
 		try {     
-            String sourceTemplate = "SomeValue";
+            		String sourceTemplate = "SomeValue";
 			String template = new String(sourceTemplate);     
     
 			// Substitute for %CODE%
@@ -13,7 +13,7 @@ public class Template {
 			template.substring(0, templateSplitBegin));
 			String templatePartTwo = new String(
 			template.substring(templateSplitEnd, template.length()));
-            String reqId = "reqId";
+            		String reqId = "reqId";
 			String code = new String(reqId);
 			template = new String(templatePartOne + code + templatePartTwo); 
     
